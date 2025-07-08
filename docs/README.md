@@ -4,6 +4,16 @@ This project demonstrates an end-to-end data engineering pipeline that extracts 
 
 ---
 
+## Pipeline Highlights
+
+- **Fully automated ETL**: Data extraction, transformation, and loading triggered via S3 and managed with Airflow
+- **Event-driven design**: Lambda triggers on S3 uploads to transform data
+- **Schema-mapped ingestion**: Data loaded into Redshift using `COPY` command via Airflow's `S3ToRedshiftOperator`
+- **Dynamic dashboards**: QuickSight visualizes price trends, rent estimates, and more
+- **Infrastructure as code (IaC)** ready for scaling and reusability
+
+---
+
 ## Architecture Overview
 
 \`\`\`
