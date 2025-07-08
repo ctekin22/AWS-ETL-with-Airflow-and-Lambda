@@ -1,10 +1,10 @@
-# 🏠 Zillow Real Estate Data Pipeline with Airflow, AWS Lambda, Redshift, and QuickSight
+# Zillow Real Estate Data Pipeline with Airflow, AWS Lambda, Redshift, and QuickSight
 
 This project demonstrates an end-to-end data engineering pipeline that extracts real estate data from the **Zillow API**, transforms it using **AWS Lambda**, stores it in **Amazon Redshift**, and visualizes it with **Amazon QuickSight** — all orchestrated via **Apache Airflow**.
 
 ---
 
-## 🚀 Architecture Overview
+## Architecture Overview
 
 \`\`\`
 Zillow API → EC2 (Airflow DAG) 
@@ -18,7 +18,7 @@ Zillow API → EC2 (Airflow DAG)
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 - **Apache Airflow** (ETL Orchestration)
 - **AWS EC2** (Airflow Host)
