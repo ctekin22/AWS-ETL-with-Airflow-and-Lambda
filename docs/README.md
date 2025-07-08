@@ -30,3 +30,14 @@ Zillow API → EC2 (Airflow DAG)
 
 ---
 
+# 🔧 Key Features
+
+- ✅ Extracts Zillow real estate listings from a RapidAPI source  
+- ✅ Transforms and cleans the raw JSON data to CSV using AWS Lambda  
+- ✅ Dynamically loads transformed data into Amazon Redshift via Airflow  
+- ✅ Visualizes median price, rent estimates, and location-based insights with QuickSight  
+- ✅ Modular DAG using Airflow \`BashOperator\`, \`PythonOperator\`, \`S3KeySensor\`, and \`S3ToRedshiftOperator\`
+
+---
+
+
