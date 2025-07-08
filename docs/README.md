@@ -88,5 +88,12 @@ Zillow API → EC2 (Airflow DAG)
 ├── README.md
 
 
+## Cleanup and Cost Awareness
+
+Be mindful to shut down resources when not in use:
+
+-  Terminate Redshift cluster to avoid charges  
+-  Stop EC2 instances and clean up S3 buckets  
+-  Delete QuickSight datasets if no longer used
 
 
