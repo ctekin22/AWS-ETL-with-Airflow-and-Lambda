@@ -30,14 +30,53 @@ Zillow API → EC2 (Airflow DAG)
 
 ---
 
-# 🔧 Key Features
+## ⚙️ Tools & Technologies Used
 
-- ✅ Extracts Zillow real estate listings from a RapidAPI source  
-- ✅ Transforms and cleans the raw JSON data to CSV using AWS Lambda  
-- ✅ Dynamically loads transformed data into Amazon Redshift via Airflow  
-- ✅ Visualizes median price, rent estimates, and location-based insights with QuickSight  
-- ✅ Modular DAG using Airflow \`BashOperator\`, \`PythonOperator\`, \`S3KeySensor\`, and \`S3ToRedshiftOperator\`
+| Category            | Tool / Service                          |
+|---------------------|------------------------------------------|
+| **Orchestration**   | Apache Airflow                          |
+| **Data Extraction** | Python + Zillow API via RapidAPI        |
+| **Cloud Platform**  | Amazon Web Services (AWS)               |
+| **Storage**         | Amazon S3 (Multi-Zone: Raw, Processed)  |
+| **ETL Logic**       | AWS Lambda (JSON to CSV)                |
+| **Data Warehouse**  | Amazon Redshift                         |
+| **Visualization**   | Amazon QuickSight                       |
+| **IAM Roles**       | Granular permissions for Lambda, S3, Redshift |
+| **Security**        | VPC, Security Groups, IAM               |
 
 ---
+
+## Key Features
+
+- Automated extraction of real estate data from a public API  
+- Lambda-powered data transformation: JSON ➝ CSV  
+- Serverless, event-driven pipeline: S3 triggers Lambda functions  
+- Orchestrated with Airflow using `PythonOperator`, `BashOperator`, `S3KeySensor`, and `S3ToRedshiftOperator`  
+- Secure and scalable ingestion into Amazon Redshift  
+- Dynamic dashboards and visualizations in QuickSight  
+- IAM-based access control and least privilege configuration
+
+---
+
+## Example Visualizations in QuickSight
+
+- **Median home prices by ZIP code**
+- **Average price vs bedroom count**
+- **Rent Zestimate by home type**
+- **Comparative analysis by city or home status**
+
+---
+
+## Testing & Validation
+
+- Airflow DAGs tested end-to-end on EC2-hosted Airflow instance  
+- Redshift queries validated via Query Editor v2  
+- QuickSight dashboards are configured to refresh dynamically  
+
+---
+
+## Folder Structure
+
+
 
 
