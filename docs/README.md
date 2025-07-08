@@ -30,7 +30,7 @@ Zillow API → EC2 (Airflow DAG)
 
 ---
 
-## ⚙️ Tools & Technologies Used
+## Tools & Technologies Used
 
 | Category            | Tool / Service                          |
 |---------------------|------------------------------------------|
@@ -76,6 +76,16 @@ Zillow API → EC2 (Airflow DAG)
 ---
 
 ## Folder Structure
+
+├── dags/ # Airflow DAG for the pipeline
+
+├── scripts/ # Python scripts for API data extraction and lambda functions
+
+├── datasets/ # (Optional) Sample transformed data
+
+├── docs/ # Architecture diagrams, visuals
+
+├── README.md
 
 
 
