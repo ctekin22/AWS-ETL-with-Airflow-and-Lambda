@@ -1,7 +1,0 @@
-ZILLOW REAL ESTATE DATA PIPELINE WITH AIRFLOW, AWS LAMBDA, REDSHIFT, AND QUICKSIGHT
-In this data engineering project, we demonstrate how to build and automate a Python-based ETL pipeline that extracts real estate property data from the Zillow Rapid API, processes it through AWS services, and visualizes it with Amazon QuickSight.
-
-
-
- 
-
